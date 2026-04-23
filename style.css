@@ -18,29 +18,29 @@ body {
   color: var(--text);
   font-family: 'Share Tech Mono', 'Courier New', monospace;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
-.container {
-  text-align: center;
-  padding: 2rem;
+.spindle-frame {
+  position: absolute;
+  top: -5vw;
+  left: -5vw;
+  transform: rotate(35deg);
+  transform-origin: top left;
+  padding: 4rem;
 }
 
 .spindle {
-  font-size: 14px;
-  line-height: 1.2;
+  font-size: clamp(10px, 1.4vw, 16px);
+  line-height: 1.15;
   color: var(--glow);
   text-shadow:
     0 0 5px var(--glow),
     0 0 10px var(--glow),
     0 0 20px var(--glow-dim),
     0 0 40px var(--glow-dim);
-  animation: pulse 3s ease-in-out infinite;
-  margin-bottom: 2rem;
-  display: inline-block;
+  animation: pulse 4s ease-in-out infinite;
+  white-space: pre;
 }
 
 @keyframes pulse {
@@ -58,23 +58,6 @@ body {
       0 0 5px var(--glow),
       0 0 10px var(--glow-dim),
       0 0 20px var(--glow-dim);
-    opacity: 0.85;
+    opacity: 0.8;
   }
-}
-
-h1 {
-  font-size: 2rem;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
-  text-shadow:
-    0 0 10px var(--glow),
-    0 0 20px var(--glow-dim);
-  margin-bottom: 1rem;
-}
-
-.tagline {
-  font-size: 0.9rem;
-  letter-spacing: 0.3em;
-  color: var(--glow-dim);
-  text-transform: lowercase;
 }
