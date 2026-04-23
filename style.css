@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root {
+  --glow: #00ff41;
+  --glow-dim: #00cc33;
+  --bg: #0a0a0a;
+  --text: #00ff41;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Share Tech Mono', 'Courier New', monospace;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spindle {
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--glow);
+  text-shadow:
+    0 0 5px var(--glow),
+    0 0 10px var(--glow),
+    0 0 20px var(--glow-dim),
+    0 0 40px var(--glow-dim);
+  animation: pulse 3s ease-in-out infinite;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow:
+      0 0 5px var(--glow),
+      0 0 10px var(--glow),
+      0 0 20px var(--glow-dim),
+      0 0 40px var(--glow-dim);
+    opacity: 1;
+  }
+  50% {
+    text-shadow:
+      0 0 2px var(--glow),
+      0 0 5px var(--glow),
+      0 0 10px var(--glow-dim),
+      0 0 20px var(--glow-dim);
+    opacity: 0.85;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 10px var(--glow),
+    0 0 20px var(--glow-dim);
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  color: var(--glow-dim);
+  text-transform: lowercase;
+}
