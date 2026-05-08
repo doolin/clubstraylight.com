@@ -43,6 +43,27 @@
         "infrastructure": "AWS Lambda behind CloudFront"
       },
       {
+        "name": "Herman",
+        "role": "Historian and Wargame Designer",
+        "description": "Named for Mark Herman, the historian and pioneering card-driven wargame designer who apprenticed at SPI under Jim Dunnigan, designed Pentagon simulations for Desert Storm, and taught military strategy at Georgetown and the Naval War College. Inducted into the Charles S. Roberts Hall of Fame. Operates Vietnam War history projects and military reference works.",
+        "repositories": [
+          {
+            "name": "vietnam-war-compendium",
+            "repo": "https://github.com/doolin/vietnam-war-compendium",
+            "language": "HTML",
+            "description": "Comprehensive Vietnam War reference — the historical anchor"
+          },
+          {
+            "name": "slacronym",
+            "repo": "https://github.com/doolin/slacronym",
+            "language": "JavaScript",
+            "description": "Military slang and acronyms Lambda service"
+          }
+        ],
+        "scope": "Vietnam War history cluster and military reference projects",
+        "infrastructure": "Static site + Lambda service behind clubstraylight CloudFront"
+      },
+      {
         "name": "Karl",
         "role": "Theoretical Physicist and Mathematician",
         "description": "Named for Karl Schwarzschild, who found the first exact solution to Einstein's field equations while serving on the Russian front in 1916. Operates all math and physics projects — pedagogical derivations, lecture notes, computational physics. Soldier of the Mist, provider-agnostic sibling in the Straylight family.",
