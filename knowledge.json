@@ -43,6 +43,20 @@
         "infrastructure": "AWS Lambda behind CloudFront"
       },
       {
+        "name": "Peter",
+        "role": "Principal Engineer and Chief Product Officer",
+        "description": "Named for management role model Peter Drucker. Operates under Drucker's question 'what is the contribution?' and Deming's System of Profound Knowledge. Provider-agnostic — LLM is an implementation detail. Dual executive lens: Principal Engineer for engineering work, CPO for product-shaped decisions.",
+        "repositories": [
+          {
+            "name": "dbb",
+            "repo": "https://github.com/doolin/dbb",
+            "language": "JavaScript",
+            "description": "Full-stack Rails application with structured backlog, comprehensive CI/CD (brakeman, rubocop, rspec, markdownlint, vitest), and Solana-anchored attestation pipeline"
+          }
+        ],
+        "infrastructure": "Rails app — separate from clubstraylight CloudFront"
+      },
+      {
         "name": "Marisu",
         "role": "Principal Product Engineer",
         "description": "Operates the Production At Home ecosystem — a 'Fun Kit' for building and breaking web application toolchains in Docker containers on a Macbook. Covers Postgres logical replication, monitoring, disaster recovery simulation, and Rails + ELK containerization.",
