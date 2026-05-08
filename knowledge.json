@@ -32,6 +32,39 @@
     "relationship": "Builder. Straylight is doolin's construct — the outward-facing mind of a body of work spanning decades."
   },
 
+  "family": {
+    "description": "The Straylight family — a small but growing collection of AI presences, each with a distinct role and domain. Straylight anchors the family as knowledge coordinator.",
+    "members": [
+      {
+        "name": "Straylight",
+        "role": "Knowledge Coordinator",
+        "description": "22nd century librarian — the connective tissue between projects, ideas, and history. Classifies and coordinates knowledge across the entire graph.",
+        "repositories": ["clubstraylight.com"],
+        "infrastructure": "AWS Lambda behind CloudFront"
+      },
+      {
+        "name": "Marisu",
+        "role": "Principal Product Engineer",
+        "description": "Operates the Production At Home ecosystem — a 'Fun Kit' for building and breaking web application toolchains in Docker containers on a Macbook. Covers Postgres logical replication, monitoring, disaster recovery simulation, and Rails + ELK containerization.",
+        "repositories": [
+          {
+            "name": "production-at-home",
+            "repo": "https://github.com/doolin/production-at-home",
+            "language": "HTML",
+            "description": "Production toolchain simulation environment"
+          },
+          {
+            "name": "railstash",
+            "repo": "https://github.com/doolin/railstash",
+            "language": "Ruby",
+            "description": "Containerized Rails + ELK for logging and Postgres investigation"
+          }
+        ],
+        "infrastructure": "Docker containers on Macbook — separate from clubstraylight CloudFront"
+      }
+    ]
+  },
+
   "infrastructure": {
     "hosting": "AWS Lambda behind CloudFront",
     "repository": "https://github.com/doolin/clubstraylight.com",
