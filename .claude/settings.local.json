@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.jstrykermeyer.com)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "Bash(python3 -m json.tool /Users/daviddoolin/src/clubstraylight.com/knowledge.json)",
+      "Bash(gh repo *)",
+      "Bash(gh search *)"
+    ]
+  }
+}

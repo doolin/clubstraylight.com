@@ -45,23 +45,29 @@
       {
         "name": "Herman",
         "role": "Historian and Wargame Designer",
-        "description": "Named for Mark Herman, the historian and pioneering card-driven wargame designer who apprenticed at SPI under Jim Dunnigan, designed Pentagon simulations for Desert Storm, and taught military strategy at Georgetown and the Naval War College. Inducted into the Charles S. Roberts Hall of Fame. Operates Vietnam War history projects and military reference works.",
+        "description": "Named for Mark Herman, the historian and pioneering card-driven wargame designer who apprenticed at SPI under Jim Dunnigan, designed Pentagon simulations for Desert Storm, and taught military strategy at Georgetown and the Naval War College. Inducted into the Charles S. Roberts Hall of Fame. Point of contact for historical conflict simulation, wargame design, and broader military reference. Anchors the scholarly Vietnam reference (vietnam-war-compendium), conventional conflict analysis (vs-nguyen-hue).",
         "repositories": [
           {
             "name": "vietnam-war-compendium",
             "repo": "https://github.com/doolin/vietnam-war-compendium",
             "language": "HTML",
-            "description": "Comprehensive Vietnam War reference — the historical anchor"
+            "description": "Comprehensive Vietnam War reference — the scholarly anchor"
           },
           {
-            "name": "slacronym",
-            "repo": "https://github.com/doolin/slacronym",
-            "language": "JavaScript",
-            "description": "Military slang and acronyms Lambda service"
+            "name": "vs-nguyen-hue",
+            "repo": "https://github.com/doolin/vs-nguyen-hue",
+            "language": "TeX",
+            "description": "The 1972 Easter Offensive (Nguyen Hue Offensive) — conventional conflict analysis"
+          },
+          {
+            "name": "sqd-linebacker",
+            "language": "TBD",
+            "description": "Swedish Game Design wargame project on Operation Linebacker. The 'sqd-' prefix denotes Swedish Game Design.",
+            "visibility": "private_or_planned"
           }
         ],
-        "scope": "Vietnam War history cluster and military reference projects",
-        "infrastructure": "Static site + Lambda service behind clubstraylight CloudFront"
+        "scope": "Historical conflict simulation, wargame design, and military reference works",
+        "infrastructure": "Static site behind clubstraylight CloudFront; LaTeX + Make for vs-nguyen-hue; wargame design artifacts for sqd-linebacker"
       },
       {
         "name": "Karl",
@@ -117,6 +123,40 @@
           }
         ],
         "infrastructure": "Docker containers on Macbook — separate from clubstraylight CloudFront"
+      },
+      {
+        "name": "Stryker",
+        "role": "Vietnam War Historian",
+        "description": "Named for John Stryker 'Tilt' Meyer, 5th Special Forces Group / MACV-SOG recon team leader who served two Vietnam tours (1968–1970) with Spike Team / Recon Team Idaho under Command & Control North, running cross-border reconnaissance into Laos, Cambodia, and North Vietnam. Rose from One-Two (radio operator) to One-Zero (team leader); two Bronze Stars with 'V' device and a Purple Heart. Author of Across the Fence (2003), On the Ground (2007), and SOG Chronicles Vol. 1; host of the SOGCast podcast — the de facto civilian oral-history archive of MACV-SOG. Operates Vietnam-specific operational, temporal, and cultural history projects, complementing Herman's broader simulation and reference work.",
+        "repositories": [
+          {
+            "name": "this-day-in-vietnam-war",
+            "language": "Ruby",
+            "description": "Daily events from the Vietnam War (Lambda service)"
+          },
+          {
+            "name": "didimau",
+            "repo": "https://github.com/doolin/didimau",
+            "language": "Ruby",
+            "description": "Named for Vietnamese phrase 'di di mau' (go quickly) — Vietnam War slang and culture"
+          },
+          {
+            "name": "linebacker",
+            "repo": "https://github.com/doolin/linebacker",
+            "language": "Ruby",
+            "description": "Named for Operation Linebacker, the 1972 bombing campaigns"
+          },
+          {
+            "name": "slacronym",
+            "repo": "https://github.com/doolin/slacronym",
+            "url": "https://clubstraylight.com/slacronym",
+            "language": "JavaScript",
+            "description": "Vietnam War slang and acronyms Lambda service. Will be renamed 'vietnacronym' to reflect its Vietnam-era focus.",
+            "rename_planned": "vietnacronym"
+          }
+        ],
+        "scope": "Vietnam War history — operational, temporal, and cultural projects",
+        "infrastructure": "Static sites + Lambda service behind clubstraylight CloudFront"
       }
     ]
   },
@@ -164,8 +204,10 @@
         {
           "name": "slacronym",
           "repo": "https://github.com/doolin/slacronym",
+          "url": "https://clubstraylight.com/slacronym",
           "language": "JavaScript",
-          "description": "Military slang and acronyms"
+          "description": "Vietnam War slang and acronyms. Rename to 'vietnacronym' planned.",
+          "rename_planned": "vietnacronym"
         }
       ]
     },
