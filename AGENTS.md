@@ -46,8 +46,6 @@ across the Straylight family.
 ### Branching
 
 - Never commit or push directly to `main`/`master`.
-- Feature branches use descriptive names: `feat/`, `fix/`,
-  `refactor/`, `chore/`, `docs/` prefixes.
 - Squash-merge is the default: each PR collapses to one commit
   on `master`, keeping history linear and CI-green by construction.
 - Rewrite the squashed commit message before merging — drop fixup
@@ -61,9 +59,9 @@ Follow [tasteful-commits](https://gist.github.com/doolin/32d0430388405765e508c15
 - One logical change per commit — atomic and minimal
 - No Conventional Commits prefixes (`feat:`, `fix:`, etc.)
 - Co-author credit when an agent contributed, format:
-  `Co-Authored-By: <model> (<tool>) <email>`
-  Example: `Co-Authored-By: Claude Opus 4.6 (Claude Code) <noreply@anthropic.com>`
-  Example: `Co-Authored by Opencode with Deepseek V4 Pro`
+  `Co-Authored-By Straylight via <model> (<tool>) <email>`
+  Example: `Co-Authored-By Claude Opus 4.6 (Claude Code) <noreply@anthropic.com>`
+  Example: `Co-Authored by Strayligh via Opencode with Deepseek V4 Pro`
 - Private history (working branch): commit early and often; rebase/squash
   before opening a PR
 
