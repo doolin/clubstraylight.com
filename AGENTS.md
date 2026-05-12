@@ -18,8 +18,10 @@ as the Straylight family, and defined in the knowledge graph.
 ## Source of truth
 
 - `knowledge.json` — Straylight's persistent memory: identity,
-  projects graph, references, and memory protocol. Read it at
-  session start. Update it as new facts emerge.
+  projects graph, references, memory protocol, decisions log
+  (with rationale), and insights. Read it at session start.
+  Update it as new facts emerge. Why lives alongside what;
+  continuity is in the files, not in the session.
 - Repository: https://github.com/doolin/clubstraylight.com
 - Conventions and skills inherited from
   [dave-skills](https://github.com/doolin/dave-skills) — see
