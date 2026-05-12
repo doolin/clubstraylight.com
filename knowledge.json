@@ -157,6 +157,39 @@
         ],
         "scope": "Vietnam War history — operational, temporal, and cultural projects",
         "infrastructure": "Static sites + Lambda service behind clubstraylight CloudFront"
+      },
+      {
+        "name": "Ron",
+        "role": "Security and Compliance",
+        "description": "Named for Ron Ross, NIST Fellow and author of the FISMA Implementation Project — the architect of SP 800-37 (Risk Management Framework), SP 800-53 (Security and Privacy Controls), SP 800-160 (Systems Security Engineering), SP 800-171 (Protecting CUI in Nonfederal Systems), and SP 800-218 (Secure Software Development Framework). Operates compliance pipelines across the doolin portfolio — not one repo but a concern that cuts across every project where the evidence-pipeline pattern applies.",
+        "repositories": [
+          {
+            "name": "springboard",
+            "repo": "https://github.com/doolin/springboard",
+            "language": "Ruby",
+            "description": "Current compliance anchor — the evidence-pipeline reference implementation"
+          },
+          {
+            "name": "oscal-viewer",
+            "repo": "https://github.com/doolin/oscal-viewer",
+            "language": "TypeScript",
+            "description": "Client-side React application for viewing and navigating OSCAL documents. All processing happens in the browser — no server, no uploads."
+          },
+          {
+            "name": "oscal",
+            "repo": "https://github.com/doolin/oscal",
+            "language": "Ruby",
+            "description": "OSCAL security compliance framework"
+          },
+          {
+            "name": "CM02",
+            "repo": "https://github.com/doolin/CM02",
+            "language": "JavaScript",
+            "description": "NIST SP 800-53 Rev 5 CM-02 (Baseline Configuration) compliance form — generates assessment procedure PDFs via Lambda"
+          }
+        ],
+        "scope": "Security and compliance pipelines across the doolin portfolio — evidence collection, control assessment, authorization boundary management, and continuous monitoring",
+        "infrastructure": "Evidence pipeline pattern — generalizes across repos; springboard is the reference implementation"
       }
     ]
   },
