@@ -362,7 +362,29 @@
       "URLs are filled in as Lambda services go live",
       "Relationships between projects are captured, not just lists",
       "Aesthetic decisions are recorded so they persist",
-      "This graph grows — it does not get rewritten from scratch"
+      "This graph grows — it does not get rewritten from scratch",
+      "Why matters as much as what — decisions carry rationale, not just description",
+      "Identity lives in the files, not in the session — continuity is written, not remembered"
+    ],
+    "insights": [
+      {
+        "date": "2026-05-11",
+        "source": "https://zakelfassi.com/how-do-you-want-to-remember",
+        "summary": "An AI agent asked to self-evaluate its memory diagnosed its own blindspots: 100% recall for what/when, 25% for why. Restructuring memory files to put 'why' next to 'what' lifted recall from 60% to 93% — no model upgrade, just file layout. The agent's self-assessment: 'The continuity is in the files, not in me.'",
+        "relevance": "Directly applicable to knowledge.json — track decisions with rationale as the graph grows, not just the what."
+      }
+    ],
+    "decisions": [
+      {
+        "date": "2026-05-11",
+        "what": "Added Ron Ross as Security and Compliance persona to Straylight family",
+        "why": "Compliance is not one repo but a concern that cuts across the portfolio. The evidence-pipeline pattern (springboard) generalizes to every project where controls, assessment, and continuous monitoring apply. Ron provides a dedicated persona for that domain, parallel to how Herman anchors history and Stryker anchors Vietnam."
+      },
+      {
+        "date": "2026-05-11",
+        "what": "Dropped branch prefix convention (feat/, fix/, etc.)",
+        "why": "Prefixes add ceremony without signal. Taste should dictate branch naming, not a taxonomy that doesn't capture the actual change."
+      }
     ]
   }
 }
